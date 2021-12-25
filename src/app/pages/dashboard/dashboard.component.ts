@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Chart } from "chart.js";
-import { lineAreaChart, lineBarChart, pieChart } from "./data";
+import { ChartType } from "./cartjs.model";
+
+import { lineAreaChart, lineBarChart, pieChart } from './data';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -10,30 +12,32 @@ import { lineAreaChart, lineBarChart, pieChart } from "./data";
 })
 export class DashboardComponent implements OnInit {
 
-  public chartid: any;
-  public ctx: any;
-  public chart: any;
+  // bread crumb items
+  breadCrumbItems: Array<{}>;
+
+  // Line Chart
+  lineAreaChart: ChartType;
+  // Bar Chart
+  lineBarChart: ChartType;
+  // Pie Chart
+  pieChart: ChartType;
 
   constructor() { }
 
-  ngOnInit(): void {
-    this.__fetch('chartBar', 'bar', lineBarChart.labels, lineBarChart.datasets, lineBarChart.options);
-    this.__fetch('Cartline', 'line', lineAreaChart.labels, lineAreaChart.datasets, lineAreaChart.options);
-    this.__fetch('ChartPie', 'pie', pieChart.labels, pieChart.datasets, pieChart.options);
+  ngOnInit() {
+    this.breadCrumbItems = [{ label: 'Charts' }, { label: 'Chartjs chart', active: true }];
+  
+
+    this._fetchData();
   }
 
-  private __fetch(id: string, type: string, label, dataset, option) {
-    this.chartid = document.getElementById(id);
-    this.ctx = this.chartid.getContext('2d');
-    this.chart = new Chart(this.ctx, {
-    type: type,
-    data: {
-        labels: label,
-        datasets: dataset
-    },
-    options: option
-});
-
+  private _fetchData() {
+    // Line Chart data
+    this.lineAreaChart = lineAreaChart;
+    // Bar Chart data
+    this.lineBarChart = lineBarChart;
+    // Pie Chart data
+    this.pieChart = pieChart;
   }
 
 }

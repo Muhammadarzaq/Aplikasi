@@ -4,7 +4,6 @@
     <div class="row">
         <div class="col-lg-2">
             <br>
-            <br>
             <app-samping></app-samping>
         </div>
         <div class="col-lg-10">
@@ -75,10 +74,10 @@
             <br>
             <input type="date">-
             <input type="date">
-
+            <br>
 
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title mb-4">Line Chart</h4>
@@ -97,16 +96,15 @@
                                 </div>
                             </div>
                             <div class="chartjs-chart">
-                                <canvas id="ChartLine"></canvas>
                                 <!-- Line Chart -->
-                                <!-- <canvas baseChart height="300" [datasets]="lineAreaChart.datasets"
+                                <canvas baseChart height="300" [datasets]="lineAreaChart.datasets"
                                     [labels]="lineAreaChart.labels" [options]="lineAreaChart.options" chartType="line">
-                                </canvas> -->
+                                </canvas>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title mb-4">Bar Chart</h4>
@@ -125,22 +123,18 @@
                                 </div>
                             </div>
                             <div class="chartjs-chart">
-                                <canvas id="chartBar"></canvas>
                                 <!-- Bar Chart -->
-                                <!-- <canvas baseChart [datasets]="lineBarChart.datasets" chartType="bar"
+                                <canvas baseChart [datasets]="lineBarChart.datasets" chartType="bar"
                                     [options]="lineBarChart.options" height="300" [labels]="lineBarChart.labels">
-                                </canvas> -->
+                                </canvas>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title mb-4">Pie Chart</h4>
+                            <h4 class="card-title mb-3">Pie Chart</h4>
                             <div class="row text-center">
                                 <div class="col-4">
                                     <h5 class="mb-0">2536</h5>
@@ -156,15 +150,18 @@
                                 </div>
                             </div>
                             <div class="chartjs-chart">
-                                <canvas id="ChartPie"></canvas>
                                 <!-- Line Chart -->
-                                <!-- <canvas baseChart [datasets]="pieChart.datasets" chartType="pie"
+                                <canvas baseChart [datasets]="pieChart.datasets" chartType="pie"
                                     [options]="pieChart.options" height="260">
-                                </canvas> -->
+                                </canvas>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
+
         </div>
     </div>

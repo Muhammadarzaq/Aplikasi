@@ -1,0 +1,181 @@
+<app-sidebarku></app-sidebarku>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2">
+            <br>
+            <app-samping></app-samping>
+        </div>
+        <div class="col-lg-10">
+            <br>
+            <input type="date">-
+            <input type="date">
+            <button class="btn btn-primary" style="margin-left: 10px;"> MULAI</button>
+            <br>
+            <br>
+            <div class="row">
+
+                <div class="col-lg-3">
+                    <br>
+                    <div class="card-body" style="background-color: lightskyblue; width: 300px;">
+                        <h4>total nominal transaksi</h4>
+                        <p>Rp.25.000.00</p>
+                    </div>
+                    <tr>
+                </div>
+                <div class="col-lg-3">
+                    <br>
+                    <div class="card-body my-100"
+                        style="background-color: lightskyblue; margin-left: 70px; width: 300px; margin-bottom: 40px;">
+                        <h4>total transaksi</h4>
+                        <h1 style="text-align: center;">4</h1>
+                    </div>
+                    <tr>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <!-- tabelll -->
+                        <table class="table table-dark mb-0" style="width: 435px;">
+                            <thead>
+                                <tr>
+                                    <th style="width: 100px; text-align: center;">NO</th>
+                                    <th style="width: 200px; text-align: center;">ID transaksi</th>
+                                    <th style="width: 250px; text-align: center;">waktu</th>
+                                    <th style="width: 250px; text-align: center;">kasir</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th style="text-align: center;" scope="row">1</th>
+                                    <td style="text-align: center;">5344ghvhh3</td>
+                                    <td style="text-align: center;">27/4/30</td>
+                                    <td style="text-align: center;">2</td>
+                                </tr>
+                                <tr>
+                                    <th style="text-align: center;" scope="row">2</th>
+                                    <td style="text-align: center;">5344ghvhh3</td>
+                                    <td style="text-align: center;">27/4/30</td>
+                                    <td style="text-align: center;">1</td>
+                                </tr>
+                                <tr>
+                                    <th style="text-align: center;" scope="row">3</th>
+                                    <td style="text-align: center;">5344ghvhh3</td>
+                                    <td style="text-align: center;">27/4/30</td>
+                                    <td style="text-align: center;">1</td>
+                                </tr>
+                                <tr>
+                                    <th style="text-align: center;" scope="row">4</th>
+                                    <td style="text-align: center;">5344ghvhh3</td>
+                                    <td style="text-align: center;">27/4/30</td>
+                                    <td style="text-align: center;">4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-lg-7">
+
+                        <!-- tabelll -->
+                        <table class="table table-dark" style="width: 600px;">
+                            <thead>
+                                <tr>
+                                    <th style="width: 250px; text-align: center;">total trsansaksi</th>
+                                    <th style="text-align: center;" colspan="2">ACTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th style="text-align: center;" scope="row">48000</th>
+
+                                    <td style="text-align: center;"><button type="button"
+                                            class="btn btn-success">EDIT</button></td>
+                                    <td style="text-align: center;"><button type="button"
+                                            class="btn btn-danger">HAPUS</button></td>
+                                </tr>
+                                <tr>
+                                    <th style="text-align: center;" scope="row">50000</th>
+
+                                    <td style="text-align: center;"><button type="button"
+                                            class="btn btn-success">EDIT</button></td>
+                                    <td style="text-align: center;"><button type="button"
+                                            class="btn btn-danger">HAPUS</button></td>
+                                </tr>
+                                <tr>
+                                    <th style="text-align: center;" scope="row">20000</th>
+
+                                    <td style="text-align: center;"><button type="button"
+                                            class="btn btn-success">EDIT</button></td>
+                                    <td style="text-align: center;"><button type="button"
+                                            class="btn btn-danger">HAPUS</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="d-flex justify-right">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    detail trsansaksi
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">detail trsansaksi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6>ID transaksi</h6>
+                <p>5cdhgshhshg</p>
+                <h6>pendapatan kantor</h6>
+                <p>Rp.45.000.00</p>
+                <h6>jenis pembayaran </h6>
+                <p>tunai</p>
+                <h6>customer</h6>
+                <p>umum</p>
+
+                <table class="table table-dark mb-0" style="width: 435px;">
+                    <thead>
+                        <tr>
+                            <th style="width: 100px; text-align: center;">NO</th>
+                            <th style="width: 200px; text-align: center;">ID transaksi</th>
+                            <th style="width: 250px; text-align: center;">waktu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th style="text-align: center;" scope="row">1</th>
+                            <td style="text-align: center;">5344ghvhh3</td>
+                            <td style="text-align: center;">27/4/30</td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: center;" scope="row">2</th>
+                            <td style="text-align: center;">5344ghvhh3</td>
+                            <td style="text-align: center;">27/4/30</td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: center;" scope="row">3</th>
+                            <td style="text-align: center;">5344ghvhh3</td>
+                            <td style="text-align: center;">27/4/30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">keluar</button>
+            </div>
+        </div>
+    </div>
+</div>

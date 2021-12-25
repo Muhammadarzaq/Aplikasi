@@ -8,6 +8,11 @@ import { SidebarkuComponent } from './sidebarku/sidebarku.component';
 import { RegisterComponent } from './register/register.component';
 import { SampingComponent } from './samping/samping.component';
 import { LaporanPenjualanComponent } from './laporan-penjualan/laporan-penjualan.component';
+import { CetakLaporanPenjualanComponent } from './cetak-laporan-penjualan/cetak-laporan-penjualan.component';
+import { ChartsModule } from "ng2-charts";
+import { KasirComponent } from './kasir/kasir.component';
+import { TransaksiComponent } from './transaksi/transaksi.component';
+
 
 // Chart data
 export interface ChartType {
@@ -17,10 +22,18 @@ export interface ChartType {
 }
 
 @NgModule({
-  declarations: [DashboardComponent, ProdukComponent, SidebarkuComponent, RegisterComponent, SampingComponent, LaporanPenjualanComponent],
+  declarations: [
+    DashboardComponent, 
+    ProdukComponent,
+    SidebarkuComponent,
+    RegisterComponent,
+    SampingComponent,
+    LaporanPenjualanComponent, 
+    CetakLaporanPenjualanComponent, KasirComponent, TransaksiComponent],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    ChartsModule
   ]
 })
 export class PagesModule { }
